@@ -1,0 +1,850 @@
+{
+	"info": {
+		"_postman_id": "7272ebde-6bce-49b7-b057-36d0038f6432",
+		"name": "Impact Postman API requests Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "httpbin requests",
+			"item": [
+				{
+					"name": "/ip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a5ba11d-4b59-42be-b3ad-9cf2b8e111bd",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "61a3e5a7-c3f2-4525-b92f-b31a02694f60",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{httpbin}}/ip",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"ip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/delay",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "89bb3d6d-e9f2-4b6b-a6e5-61ed285d4a30",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ff5d44b4-df20-4b5b-b36b-35f2ee5a05e9",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{httpbin}}/delay/1",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"delay",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/xml",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f33ed4b0-072a-4a08-9097-fba3a2989bff",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8bde70da-4957-4bde-92b9-6b436cd6461a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{httpbin}}/xml",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"xml"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/get",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3239a4ed-2a58-4c65-939e-ed43cde41e53",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fdcc4ece-5ea1-4406-9bee-44e9897da329",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{httpbin}}/get",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/post",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "574b8534-6f6a-49aa-9a09-26912420476c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c298c0b3-2ef9-473b-afe8-f379334bd9bc",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comments\": \"Don't Eat Yellow Snow\", \n    \"custemail\": \"janeorjohn@example.com\", \n    \"custname\": \"JaneOrJohn Doe\", \n    \"custtel\": \"0170\", \n    \"delivery\": \"17:45\", \n    \"size\": \"medium\", \n    \"topping\": \"UpTop\"\n}"
+						},
+						"url": {
+							"raw": "{{httpbin}}/post",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/put",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cc452d1a-31e1-483d-ab37-99a772df8e8c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "86586219-0037-4162-af7a-8253139d85fd",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comments\": \"Don't Eat Yellow Snow\", \n    \"custemail\": \"janeorjohn@example.com\", \n    \"custname\": \"JaneOrJohn Doe\", \n    \"custtel\": \"0170\", \n    \"delivery\": \"17:45\", \n    \"size\": \"medium\", \n    \"topping\": \"UpTop\"\n}"
+						},
+						"url": {
+							"raw": "{{httpbin}}/put",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"put"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ed7099b9-8d48-4151-b358-27e9f5eca980",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9b605d51-1aaf-46d0-bfe4-e6d9889652c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comments\": \"Don't Eat Yellow Snow\", \n    \"custemail\": \"janeorjohn@example.com\", \n    \"custname\": \"JaneOrJohn Doe\", \n    \"custtel\": \"0170\", \n    \"delivery\": \"17:45\", \n    \"size\": \"medium\", \n    \"topping\": \"UpTop\"\n}"
+						},
+						"url": {
+							"raw": "{{httpbin}}/delete",
+							"host": [
+								"{{httpbin}}"
+							],
+							"path": [
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meraki Requests",
+			"item": [
+				{
+					"name": "List organizations this user has access to",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Cisco-Meraki-API-Key",
+								"value": "{{X-Cisco-Meraki-API-Key}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/organizations",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"organizations"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nGET /organizations\n```\n\n## PARAMETERS\n**None**\n\n## SAMPLE REQUEST\n```\ncurl -L -H 'X-Cisco-Meraki-API-Key: <key>' -X GET -H 'Content-Type: application/json' 'https://api.meraki.com/api/v0/organizations'\n```\n## SAMPLE RESPONSE\n```\nSuccessful HTTP Status: 200\n[\n  {\n    \"id\":1234,\n    \"name\":\"My org\"\n  }\n]\n```"
+					},
+					"response": [
+						{
+							"name": "get Org List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Cisco-Meraki-API-Key",
+										"value": "{{X-Cisco-Meraki-API-Key}}"
+									}
+								],
+								"url": {
+									"raw": "https://dashboard.meraki.com/api/v0/organizations",
+									"protocol": "https",
+									"host": [
+										"dashboard",
+										"meraki",
+										"com"
+									],
+									"path": [
+										"api",
+										"v0",
+										"organizations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": ""
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": ""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"name": "Content-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": ""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 02 Jul 2017 00:37:22 GMT",
+									"name": "Date",
+									"description": ""
+								},
+								{
+									"key": "Expires",
+									"value": "Fri, 01 Jan 1990 00:00:00 GMT",
+									"name": "Expires",
+									"description": ""
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": ""
+								},
+								{
+									"key": "Public-Key-Pins-Report-Only",
+									"value": "max-age=1200; pin-sha256=\"2V5tfxXMLkn2kVg/Iv8FqL4JHcNVGEUFK27oSMYhHEU=\"; pin-sha256=\"8Rw90Ej3Ttt8RRkrg+WYDS9n7IS03bk5bjP/UXPtaY8=\"; pin-sha256=\"3YQf+D42t1/pQJhWTwYLRnFVnbBNXf9W5S6dmwq2+3g=\"; pin-sha256=\"klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY=\"; pin-sha256=\"fake+hpkp+key+for+testing+report+only+QWERT=\"; includeSubDomains; report-uri=\"https://therealmerakidashboard.report-uri.io/r/default/hpkp/reportOnly\"",
+									"name": "Public-Key-Pins-Report-Only",
+									"description": ""
+								},
+								{
+									"key": "Server",
+									"value": "nginx",
+									"name": "Server",
+									"description": ""
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains",
+									"name": "Strict-Transport-Security",
+									"description": ""
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"name": "Vary",
+									"description": ""
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin",
+									"name": "X-Frame-Options",
+									"description": ""
+								},
+								{
+									"key": "X-Rack-Cache",
+									"value": "miss",
+									"name": "X-Rack-Cache",
+									"description": ""
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "3430d3b55bff802652297aa60f69db6e",
+									"name": "X-Request-Id",
+									"description": ""
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.120140",
+									"name": "X-Runtime",
+									"description": ""
+								},
+								{
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"name": "X-UA-Compatible",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "[{\"id\":537758,\"name\":\"Meraki Live Demo\",\"samlConsumerUrl\":null,\"samlConsumerUrls\":[]},{\"id\":549236,\"name\":\"Meraki Live Sandbox\",\"samlConsumerUrl\":\"https://n149.meraki.com/saml/login/-t35Mb/TvUzhbJtIRna\",\"samlConsumerUrls\":[\"https://n149.meraki.com/saml/login/-t35Mb/TvUzhbJtIRna\"]},{\"id\":646829496481088375,\"name\":\"mirakel test\"}]"
+						}
+					]
+				},
+				{
+					"name": "List networks in org",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Cisco-Meraki-API-Key",
+								"value": "{{X-Cisco-Meraki-API-Key}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/organizations/{{organizationId}}/networks",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"organizations",
+								"{{organizationId}}",
+								"networks"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nGET /organizations/[organizationId]/networks\n```\n\n## PARAMETERS\n\n**parameters**|**Description of the parameter**\n :-------------: |:-------------:\nconfigTemplateId|An optional parameter that is the ID of a config template. Will return all networks bound to that template.\n\n### SAMPLE REQUEST\n```\ncurl -L -H 'X-Cisco-Meraki-API-Key: <key>' -X GET -H 'Content-Type: application/json' 'https://api.meraki.com/api/v0/organizations/[organizationId]/networks'\n```\n### SAMPLE RESPONSE\n```\nSuccessful HTTP Status: 200\n[\n  {\n    \"id\":\"N_1234\",\n    \"organizationId\":\"1234\",\n    \"type\": \"wireless\",\n    \"name\":\"My network\",\n    \"timeZone\": \"US/Pacific\",\n    \"tags\": null\n  }\n]\n```"
+					},
+					"response": [
+						{
+							"name": "get Networks List - Meraki Dev Sandbox",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Cisco-Meraki-API-Key",
+										"value": "{{X-Cisco-Meraki-API-Key}}"
+									}
+								],
+								"url": {
+									"raw": "https://dashboard.meraki.com/api/v0/organizations/{{organizationId}}/networks",
+									"protocol": "https",
+									"host": [
+										"dashboard",
+										"meraki",
+										"com"
+									],
+									"path": [
+										"api",
+										"v0",
+										"organizations",
+										"{{organizationId}}",
+										"networks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Age",
+									"value": "0",
+									"name": "Age",
+									"description": ""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache",
+									"name": "Cache-Control",
+									"description": ""
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": ""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"name": "Content-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": ""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 02 Jul 2017 00:28:27 GMT",
+									"name": "Date",
+									"description": ""
+								},
+								{
+									"key": "Expires",
+									"value": "Fri, 01 Jan 1990 00:00:00 GMT",
+									"name": "Expires",
+									"description": ""
+								},
+								{
+									"key": "Last-Modified",
+									"value": "Sun, 02 Jul 2017 00:28:27 GMT",
+									"name": "Last-Modified",
+									"description": ""
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": ""
+								},
+								{
+									"key": "Public-Key-Pins-Report-Only",
+									"value": "max-age=1200; pin-sha256=\"2V5tfxXMLkn2kVg/Iv8FqL4JHcNVGEUFK27oSMYhHEU=\"; pin-sha256=\"8Rw90Ej3Ttt8RRkrg+WYDS9n7IS03bk5bjP/UXPtaY8=\"; pin-sha256=\"3YQf+D42t1/pQJhWTwYLRnFVnbBNXf9W5S6dmwq2+3g=\"; pin-sha256=\"klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY=\"; pin-sha256=\"fake+hpkp+key+for+testing+report+only+QWERT=\"; includeSubDomains; report-uri=\"https://therealmerakidashboard.report-uri.io/r/default/hpkp/reportOnly\"",
+									"name": "Public-Key-Pins-Report-Only",
+									"description": ""
+								},
+								{
+									"key": "Server",
+									"value": "nginx",
+									"name": "Server",
+									"description": ""
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains",
+									"name": "Strict-Transport-Security",
+									"description": ""
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"name": "Vary",
+									"description": ""
+								},
+								{
+									"key": "X-Content-Digest",
+									"value": "d05e0e864bbb30b106ec31cc5d3106f6b0744356",
+									"name": "X-Content-Digest",
+									"description": ""
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin",
+									"name": "X-Frame-Options",
+									"description": ""
+								},
+								{
+									"key": "X-Rack-Cache",
+									"value": "stale, invalid, store",
+									"name": "X-Rack-Cache",
+									"description": ""
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "6232fdba8f2c54f3b43ffd5098af50c6",
+									"name": "X-Request-Id",
+									"description": ""
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.062001",
+									"name": "X-Runtime",
+									"description": ""
+								},
+								{
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"name": "X-UA-Compatible",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "[{\"id\":\"L_646829496481092083\",\"organizationId\":\"549236\",\"name\":\"Sandbox 3 - Kampala Uganda\",\"timeZone\":\"US/Mountain\",\"tags\":\" LearningLab Sandbox \",\"type\":\"combined\"},{\"id\":\"L_646829496481095584\",\"organizationId\":\"549236\",\"name\":\"Sandbox 1 - Galway Ireland\",\"timeZone\":\"America/Los_Angeles\",\"tags\":\" Global Sandbox \",\"type\":\"combined\"},{\"id\":\"L_646829496481095933\",\"organizationId\":\"549236\",\"name\":\"Sandbox 2 - Las Vegas USA\",\"timeZone\":\"America/Los_Angeles\",\"tags\":\" Sandbox \",\"type\":\"combined\"},{\"id\":\"L_646829496481095588\",\"organizationId\":\"549236\",\"name\":\"Sandbox 4 - Tokyo Japan\",\"timeZone\":\"America/Los_Angeles\",\"tags\":\" Sandbox \",\"type\":\"combined\"},{\"id\":\"L_646829496481095937\",\"organizationId\":\"549236\",\"name\":\"Cisco Live MTE\",\"timeZone\":\"Europe/Zurich\",\"tags\":null,\"type\":\"combined\",\"configTemplateId\":\"L_646829496481095982\"},{\"id\":\"L_646829496481095659\",\"organizationId\":\"549236\",\"name\":\"Sandbox 5 - Sydney Australia\",\"timeZone\":\"America/Los_Angeles\",\"tags\":\" Sandbox \",\"type\":\"combined\"},{\"id\":\"L_646829496481095660\",\"organizationId\":\"549236\",\"name\":\"Sandbox 6 - Vilnius Lithuana\",\"timeZone\":\"America/Los_Angeles\",\"tags\":\" Sandbox \",\"type\":\"combined\"},{\"id\":\"N_646829496481132993\",\"organizationId\":\"549236\",\"name\":\"Hotspot 2.0\",\"timeZone\":\"America/Los_Angeles\",\"tags\":null,\"type\":\"wireless\"},{\"id\":\"N_646829496481133452\",\"organizationId\":\"549236\",\"name\":\"Temp-Sandbox\",\"timeZone\":\"America/Los_Angeles\",\"tags\":null,\"type\":\"wireless\"}]"
+						}
+					]
+				},
+				{
+					"name": "List the devices in a network",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Cisco-Meraki-API-Key",
+								"value": "{{X-Cisco-Meraki-API-Key}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/networks/{{networkId}}/devices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"networks",
+								"{{networkId}}",
+								"devices"
+							]
+						},
+						"description": "## HTTP REQUEST\n```\nGET /networks/[networkId]/devices\n```\n\n## PARAMETERS\n**None**\n\n## SAMPLE REQUEST\n```\ncurl -L -H 'X-Cisco-Meraki-API-Key: <key>' -X GET -H 'Content-Type: application/json' 'https://api.meraki.com/api/v0/networks/[networkId]/devices'\n```\n\n## SAMPLE RESPONSE\n```\nSuccessful HTTP Status: 200\n[\n  {\n    \"name\":\"My AP\",\n    \"lat\":37.4180951010362,\n    \"lng\":-122.098531723022,\n    \"serial\":\"Q2XX-XXXX-XXXX\",\n    \"mac\":\"00:11:22:33:44:55:66\",\n    \"model\":\"MR34\",\n    \"address\":\"1600 Pennsylvania Ave\",\n    \"lanIp\":\"1.2.3.4\"\n    \"tags\":\" recently-added \",\n    \"networkId\":\"N_1234\",\n    \"beaconIdParams\": {\n      \"uuid\": \"00000000-0000-0000-0000-000000000000\",\n      \"major\": 5,\n      \"minor\": 3,\n    }\n  }\n]\n```"
+					},
+					"response": [
+						{
+							"name": "get Devices List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Cisco-Meraki-API-Key",
+										"value": "{{X-Cisco-Meraki-API-Key}}"
+									}
+								],
+								"url": {
+									"raw": "https://dashboard.meraki.com/api/v0/networks/{{networkId}}/devices",
+									"protocol": "https",
+									"host": [
+										"dashboard",
+										"meraki",
+										"com"
+									],
+									"path": [
+										"api",
+										"v0",
+										"networks",
+										"{{networkId}}",
+										"devices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate",
+									"name": "Cache-Control",
+									"description": ""
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": ""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"name": "Content-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": ""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 02 Jul 2017 00:24:26 GMT",
+									"name": "Date",
+									"description": ""
+								},
+								{
+									"key": "Expires",
+									"value": "Fri, 01 Jan 1990 00:00:00 GMT",
+									"name": "Expires",
+									"description": ""
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": ""
+								},
+								{
+									"key": "Public-Key-Pins-Report-Only",
+									"value": "max-age=1200; pin-sha256=\"2V5tfxXMLkn2kVg/Iv8FqL4JHcNVGEUFK27oSMYhHEU=\"; pin-sha256=\"8Rw90Ej3Ttt8RRkrg+WYDS9n7IS03bk5bjP/UXPtaY8=\"; pin-sha256=\"3YQf+D42t1/pQJhWTwYLRnFVnbBNXf9W5S6dmwq2+3g=\"; pin-sha256=\"klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY=\"; pin-sha256=\"fake+hpkp+key+for+testing+report+only+QWERT=\"; includeSubDomains; report-uri=\"https://therealmerakidashboard.report-uri.io/r/default/hpkp/reportOnly\"",
+									"name": "Public-Key-Pins-Report-Only",
+									"description": ""
+								},
+								{
+									"key": "Server",
+									"value": "nginx",
+									"name": "Server",
+									"description": ""
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains",
+									"name": "Strict-Transport-Security",
+									"description": ""
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"name": "Vary",
+									"description": ""
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin",
+									"name": "X-Frame-Options",
+									"description": ""
+								},
+								{
+									"key": "X-Rack-Cache",
+									"value": "miss",
+									"name": "X-Rack-Cache",
+									"description": ""
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "9cddcdc1efaea3748f1bbe0b7dba4bdd",
+									"name": "X-Request-Id",
+									"description": ""
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.079595",
+									"name": "X-Runtime",
+									"description": ""
+								},
+								{
+									"key": "X-UA-Compatible",
+									"value": "IE=Edge,chrome=1",
+									"name": "X-UA-Compatible",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "[{\"lanIp\":\"10.10.130.99\",\"serial\":\"Q2PD-QG4J-JT9F\",\"mac\":\"0c:8d:db:66:45:6d\",\"lat\":51.5081677,\"lng\":-0.0598511,\"address\":\"\",\"tags\":\" devnet \",\"name\":\"Workshop 2 - Captive Portal\",\"model\":\"MR33\",\"networkId\":\"L_646829496481095933\"},{\"lanIp\":null,\"serial\":\"Q2RD-9R8X-VHE8\",\"mac\":\"e0:55:3d:ee:57:70\",\"lat\":37.4180951010362,\"lng\":-122.098531723022,\"address\":\"\",\"tags\":\" recently-added \",\"name\":null,\"model\":\"MR30H\",\"networkId\":\"L_646829496481095933\"},{\"lanIp\":null,\"serial\":\"Q2AT-YECB-HSLC\",\"mac\":\"00:18:0a:12:31:d0\",\"lat\":37.4180951010362,\"lng\":-122.098531723022,\"address\":\"\",\"tags\":\" recently-added \",\"name\":null,\"model\":\"MC74\",\"networkId\":\"L_646829496481095933\"},{\"lanIp\":null,\"serial\":\"Q2AT-DA5E-TRUS\",\"mac\":\"e0:55:3d:4e:bc:75\",\"lat\":37.4180951010362,\"lng\":-122.098531723022,\"address\":\"\",\"tags\":\" recently-added \",\"name\":null,\"model\":\"MC74\",\"networkId\":\"L_646829496481095933\"}]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "16a205e9-64cb-4c5e-9a1e-46a23a0f1a40",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "83808d9e-7013-4338-ae9b-1ed28bba0bab",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
