@@ -20,6 +20,19 @@ https://raw.githubusercontent.com/JockDaRock/impact19-api-ws/master/Impact%20Pos
 
 https://raw.githubusercontent.com/CiscoDevNet/IOx-FND-API-App-Deploy-Postman/master/IOx-FND%20API%20App%20Deploy-Undeploy%20Postman.postman_collection.json-->
 
+* Environment Variables for Postman
+
+`X-Cisco-Meraki-API-Key` : `6bec40cf957de430a6f1f2baa056b99a4fac9ea0`
+
+`organizationId`
+
+`networkId`
+
+`baseUrl` : `https://api.meraki.com/api/v0`
+
+`httpbin` : `http://httpbin.org`
+
+
 
 ## Python Samples
 
